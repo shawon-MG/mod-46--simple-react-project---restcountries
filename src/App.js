@@ -24,7 +24,7 @@ function LoadCountries(){
 
   return (
     <div>
-      <h1>Visiting all countries of the world</h1>
+      <h1 style={{backgroundColor: 'gray', padding: '20px', border: '2px solid black', borderRadius: '50px'}}>Visiting all countries of the world</h1>
 
       {
         countries.map(country => <CountriesInfo name = {country.name.common} population = {country.population}></CountriesInfo>)
