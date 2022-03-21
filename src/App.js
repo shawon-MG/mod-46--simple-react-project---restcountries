@@ -1,15 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Countries from './component/Countries/Countries';
+import Person from './component/Person/Person';
 
 function App() {
   return (
     <div className="App">
-      <LoadCountries></LoadCountries>
+      {/* <LoadCountries></LoadCountries> */}
+
+      <Countries></Countries>
+      <Person></Person>
     </div>
   );
 }
+// Way-2:  Using different files for different components: (file structuring)
 
+
+
+
+
+
+
+// Way-1:  All Components in one place: 
+/* 
 function LoadCountries(){
 
   const [countries, setCountries] = useState([]);
@@ -41,6 +55,7 @@ function CountriesInfo(props){
       <h3>Population: { props.population }</h3>
     </div>
   )
-}
+} 
+*/
 
 export default App;
